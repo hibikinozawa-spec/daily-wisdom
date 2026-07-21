@@ -25,9 +25,14 @@ npm run dev
 
 [http://localhost:3000](http://localhost:3000) を開いてください。
 
-## デプロイ
+## 公開 URL
 
-Vercel に接続済みの場合:
+- アプリ: https://daily-wisdom-gilt.vercel.app
+- リポジトリ: https://github.com/hibikinozawa-spec/daily-wisdom
+
+GitHub の `main` へ push すると、Vercel が自動で再デプロイします。
+
+手動デプロイ:
 
 ```bash
 npx vercel --prod
