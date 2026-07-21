@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { WisdomEntry } from "@/components/wisdom-entry";
+import { categories } from "@/lib/categories";
 import { DAILY_COUNT, formatDateKey, formatDisplayDate, getDailyWisdom } from "@/lib/daily";
 
 export default function HomePage() {
@@ -33,6 +34,18 @@ export default function HomePage() {
             >
               カテゴリから探す →
             </Link>
+          </div>
+
+          <div className="mt-10 flex flex-wrap gap-2">
+            {categories.map((category) => (
+              <Link
+                key={category.slug}
+                href={`/categories/${category.slug}`}
+                className="border border-[var(--line)] bg-[var(--surface)] px-3 py-1.5 text-sm tracking-wide text-[var(--muted)] transition-colors hover:border-[var(--accent)] hover:text-[var(--ink)]"
+              >
+                {category.name}
+              </Link>
+            ))}
           </div>
         </div>
       </section>
