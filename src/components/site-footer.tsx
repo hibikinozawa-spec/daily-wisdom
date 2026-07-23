@@ -18,7 +18,7 @@ export function SiteFooter() {
             アーカイブ
           </Link>
           <Link href="/about" className="hover:text-[var(--ink)]">
-            について
+            GOGENについて
           </Link>
         </div>
       </div>

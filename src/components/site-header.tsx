@@ -4,7 +4,7 @@ const links = [
   { href: "/", label: "今日" },
   { href: "/categories", label: "カテゴリ" },
   { href: "/archive", label: "アーカイブ" },
-  { href: "/about", label: "について" },
+  { href: "/about", label: "GOGENについて" },
 ];
 
 export function SiteHeader() {

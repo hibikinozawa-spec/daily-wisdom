@@ -1,10 +1,8 @@
 import type { Metadata } from "next";
 import { DAILY_COUNT } from "@/lib/daily";
-import { wisdoms } from "@/lib/quotes";
-import { categories } from "@/lib/categories";
 
 export const metadata: Metadata = {
-  title: "について",
+  title: "GOGENについて",
 };
 
 export default function AboutPage() {
@@ -19,10 +17,6 @@ export default function AboutPage() {
         <p>
           GOGEN（五言）は、著名な経営者・思想家・偉人たちが残した格言や小話を、
           一日に{DAILY_COUNT}件ずつ届けます。
-        </p>
-        <p>
-          いま収録している言葉は {wisdoms.length} 件。カテゴリは {categories.length}{" "}
-          種類です。日付から決定的に選ばれるため、同じ日は誰が見ても同じ五言になります。
         </p>
         <p>
           掲載文は読みやすさ優先の意訳・要約を含みます。厳密な史料訳ではなく、日々の思索のきっかけとしてお使いください。
